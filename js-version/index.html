@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title>PDF</title>
+	<title>Templates for PDF</title>
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="style.css" />
@@ -16,7 +16,7 @@
 <body>
 
 	<div class="container">
-		<div id="content">
+		<div id="content" class="hide">
 			<!-- you can but class (square_black_top_left)  -->
 			<div class="treangle_black_top_left">
 			</div>
@@ -65,15 +65,44 @@
 
 			</div>
 
-			<div class="footer"><p>Best wishes</p></div>
+			<div class="footer">
+				<p>Best wishes</p>
+			</div>
 		</div>
 
 		<br />
 
-		<div class="btn">
-			<input type="text" id="numInput" placeholder="Num Questions" pattern="\d+"
-				oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-			<button type="submit" onclick="createQuestions()">Submit</button>
+		<div id="img_select">
+			<p>Select your templet</p>
+			<div class="row">
+
+				<div class="col-md-3">
+					<a onclick="createQuestions(25)"><img src="images\25.png" alt="" class="img">
+						<p class="text_center">25 Question</p>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a onclick="createQuestions(50)"><img src="images\50.png" alt="" class="img">
+						<p class="text_center">50 Question</p>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a onclick="createQuestions(75)"><img src="images\75.png" alt="" class="img">
+						<p class="text_center">75 Question</p>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a onclick="createQuestions(100)"><img src="images\100.png" alt="" class="img">
+						<p class="text_center">100 Question</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="btn hide" id="buttons">
+			
+			<button class="btn btn-success btn-lg" onclick="Before_selection()">Choose Another Template</button>
+
 			<button id="btn-one" class="btn btn-success btn-lg">Download PDF</button>
 		</div>
 	</div>

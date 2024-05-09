@@ -37,11 +37,40 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+function After_selection() {
+	var content = document.getElementById("content");
+	content.classList.add("show");
+	content.classList.remove("hide");
+
+	var buttons = document.getElementById("buttons");
+	buttons.classList.add("show");
+	buttons.classList.remove("hide");
+
+	var imgSelect = document.getElementById("img_select");
+	imgSelect.classList.add("hide");
+	imgSelect.classList.remove("show");
+}
 
 
-function createQuestions() {
-	var num_of_elements = document.getElementById("numInput").value;
-	num_of_elements = parseInt(num_of_elements);
+function Before_selection() {
+	var content = document.getElementById("content");
+	content.classList.add("hide");
+	content.classList.remove("show");
+
+	var buttons = document.getElementById("buttons");
+	buttons.classList.add("hide");
+	buttons.classList.remove("show");
+
+	var imgSelect = document.getElementById("img_select");
+	imgSelect.classList.add("show");
+	imgSelect.classList.remove("hide");
+}
+
+function createQuestions(num_of_element) {
+
+	After_selection()
+
+	num_of_elements = parseInt(num_of_element);
 
 	if (!isNaN(num_of_elements) && num_of_elements > 0) {
 		var quastionElement = document.getElementById("quastion");
@@ -52,32 +81,76 @@ function createQuestions() {
 
 
 
-		var left_div = createCircleContainer("col-md-3 left_div");
-		main_div.appendChild(left_div);
+		if (num_of_elements < 26) {
+			var left_div = createCircleContainer("col-md left_div");
+			main_div.appendChild(left_div);
 
-		var center_div = createCircleContainer("col-md-3 center_div");
-		main_div.appendChild(center_div);
+			var left_ul = createCircleContainerUl("left");
+			left_div.appendChild(left_ul);
+		}
 
-		var center2_div = createCircleContainer("col-md-3 center2_div");
-		main_div.appendChild(center2_div);
+		else if (num_of_elements < 51) {
+			var left_div = createCircleContainer("col-md-6 left_div");
+			main_div.appendChild(left_div);
 
-		var right_div = createCircleContainer("col-md-3 right_div");
-		main_div.appendChild(right_div);
+			var center_div = createCircleContainer("col-md-6 center_div");
+			main_div.appendChild(center_div);
 
+			var left_ul = createCircleContainerUl("left");
+			left_div.appendChild(left_ul);
 
-		var left_ul = createCircleContainerUl("left");
-		left_div.appendChild(left_ul);
-
-		var center_ul = createCircleContainerUl("center");
-		center_div.appendChild(center_ul);
-
-		var center2_ul = createCircleContainerUl("center2");
-		center2_div.appendChild(center2_ul);
-
-		var right_ul = createCircleContainerUl("right");
-		right_div.appendChild(right_ul);
+			var center_ul = createCircleContainerUl("center");
+			center_div.appendChild(center_ul);
+		}
 
 
+		else if (num_of_elements < 76) {
+			var left_div = createCircleContainer("col-md-4 left_div");
+			main_div.appendChild(left_div);
+
+			var center_div = createCircleContainer("col-md-4 center_div");
+			main_div.appendChild(center_div);
+
+			var center2_div = createCircleContainer("col-md-4 center2_div");
+			main_div.appendChild(center2_div);
+
+			var left_ul = createCircleContainerUl("left");
+			left_div.appendChild(left_ul);
+
+			var center_ul = createCircleContainerUl("center");
+			center_div.appendChild(center_ul);
+
+			var center2_ul = createCircleContainerUl("center2");
+			center2_div.appendChild(center2_ul);
+		}
+
+		else {
+			var left_div = createCircleContainer("col-md-3 left_div");
+			main_div.appendChild(left_div);
+
+			var center_div = createCircleContainer("col-md-3 center_div");
+			main_div.appendChild(center_div);
+
+			var center2_div = createCircleContainer("col-md-3 center2_div");
+			main_div.appendChild(center2_div);
+
+			var right_div = createCircleContainer("col-md-3 right_div");
+			main_div.appendChild(right_div);
+
+
+			var left_ul = createCircleContainerUl("left");
+			left_div.appendChild(left_ul);
+
+			var center_ul = createCircleContainerUl("center");
+			center_div.appendChild(center_ul);
+
+			var center2_ul = createCircleContainerUl("center2");
+			center2_div.appendChild(center2_ul);
+
+			var right_ul = createCircleContainerUl("right");
+			right_div.appendChild(right_ul);
+
+		}
 
 		function createCircleContainer(className) {
 			var circleContainer = document.createElement("div");
