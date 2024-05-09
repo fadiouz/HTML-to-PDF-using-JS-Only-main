@@ -1,7 +1,11 @@
 ## Run :
-to make this code work properly you must open the index file with live server
-*make sure you have live server extension installed in your vs code 
-*you can use alternative servers like http-server ....
+<ul>
+    <li>to make this code work properly you must open the index file with live server</li>
+    <li>_ make sure you have live server extension installed in your vs code _ </li>
+    <li>_ you can use alternative servers like http-server ....</li>
+</ul>
+
+
 
 # about  :
 this repositery is related to the automated grading system made with   <a href="https://ahedsulieman.w3spaces.com">XHooF Team</a> 
