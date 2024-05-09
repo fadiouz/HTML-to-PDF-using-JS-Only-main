@@ -1,0 +1,195 @@
+body {
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+#ignore {
+    background-color: #eee;
+}
+
+#btn {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
+
+#content img {
+    max-width: 200px;
+}
+
+
+
+.circle-container {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* .circle-container-center {
+
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: calc(33.333% - 10px);
+    margin-left: calc(33.333% - 10px);
+}
+
+.circle-container-right {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: calc(33.333% - 10px);
+    margin-left: calc(2*(33.333% - 10px));
+
+} */
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.letter {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.num_of_quastion {
+    /* background-color: rgb(225, 211, 211); لون خلفية العنصر */
+    color: rgb(11, 11, 11);
+    /* لون النص داخل العنصر */
+    font-size: 30px;
+    /* حجم الخط */
+    width: 40px;
+    /* عرض العنصر */
+    height: 40px;
+    /* ارتفاع العنصر */
+    /* border-radius: 50%; شكل العنصر كدائرة */
+    text-align: center;
+    /* محاذاة النص في وسط العنصر */
+    line-height: 40px;
+    /* ارتفاع السطر الفعلي للنص (يستخدم لمحاذاة النص عموديًا في وسط العنصر) */
+    margin-right: 4px;
+    margin-top: 4px;
+
+}
+
+.line_bottom {
+    padding-top: 20px;
+    border-bottom: solid black 2px;
+}
+
+
+#content {
+    position: relative;
+    /* max-height: 841.89px; */
+}
+
+.square_black_top_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.square_black_top_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.square_black_bottom_left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.square_black_bottom_right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+
+.treangle_black_top_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 0 30px;
+    border-color: black transparent transparent transparent;
+}
+
+.treangle_black_top_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0px 0px;
+    border-color: black transparent transparent transparent;
+}
+
+
+.treangle_black_bottom_right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent black transparent;
+}
+
+.treangle_black_bottom_left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 0;
+    border-color: transparent transparent black transparent;
+}
+
+ul{
+    margin-bottom: 3rem;
+    margin-left: -24px;
+}
+
+h5::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px; /* تعديل المسافة بين الخط وعنصر h5 حسب الحاجة */
+  }
+
+/* #quastion{
+    margin-bottom: 40px ;
+} */
+
+/*# sourceMappingURL=custom.css.map */

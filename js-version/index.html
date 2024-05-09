@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>PDF</title>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="style.css" />
+
+	<style></style>
+</head>
+
+<body>
+
+	<div class="container">
+		<div id="content">
+			<!-- you can but class (square_black_top_left) AAAAAAAAAAAAHHHHHHHHHHHEEEEEEEEEEEEEDDDDDDDDDDDD  A H E D يا حمار انتبه-->
+			<div class="treangle_black_top_left">
+			</div>
+
+
+			<!-- you can but class (square_black_top_right) -->
+			<div class="treangle_black_top_right">
+			</div>
+
+			<!-- you can but class (square_black_bottom_left) -->
+			<div class="treangle_black_bottom_left">
+			</div>
+
+
+			<!-- you can but class (square_black_bottom_right) -->
+			<div class="treangle_black_bottom_right">
+			</div>
+
+
+			<div class="container px-5">
+				<div class="row ">
+					<div class="col-3 contact-details">
+						<h5>Collage: </h5>
+						<h5>Name: </h5>
+						<h5>num: </h5>
+					</div>
+					<div class="col-1 offset-2 logo">
+						<img width="125px" height="125px" src="wsp.png" />
+					</div>
+					<div class="invoice-details col-3 offset-3 text-right">
+
+						<h6>IT</h6>
+						<h6>01/02/2020</h6>
+
+					</div>
+				</div>
+
+				<div class="line_bottom"></div>
+
+
+			</div>
+			<div id="quastion">
+
+				<!-- this code from js -->
+
+
+			</div>
+
+
+		</div>
+
+		<br />
+
+		<div class="btn">
+			<input type="text" id="numInput" placeholder="Num Questions" pattern="\d+"
+				oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+			<button type="submit" onclick="createQuestions()">Submit</button>
+			<button id="btn-one" class="btn btn-success btn-lg">Download PDF</button>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+		integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="custom.js"></script>
+</body>
+
+</html>
