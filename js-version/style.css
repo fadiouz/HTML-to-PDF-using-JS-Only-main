@@ -19,41 +19,21 @@ body {
     max-width: 200px;
 }
 
-
-
 .circle-container {
     display: flex;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 13px;
+    margin-top: 13px;
 }
-
-/* .circle-container-center {
-
-    display: flex;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    width: calc(33.333% - 10px);
-    margin-left: calc(33.333% - 10px);
-}
-
-.circle-container-right {
-    display: flex;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    width: calc(33.333% - 10px);
-    margin-left: calc(2*(33.333% - 10px));
-
-} */
 
 .circle {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .letter {
@@ -64,22 +44,12 @@ body {
 
 
 .num_of_quastion {
-    /* background-color: rgb(225, 211, 211); لون خلفية العنصر */
     color: rgb(11, 11, 11);
-    /* لون النص داخل العنصر */
-    font-size: 30px;
-    /* حجم الخط */
-    width: 40px;
-    /* عرض العنصر */
-    height: 40px;
-    /* ارتفاع العنصر */
-    /* border-radius: 50%; شكل العنصر كدائرة */
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
     text-align: center;
-    /* محاذاة النص في وسط العنصر */
-    line-height: 40px;
-    /* ارتفاع السطر الفعلي للنص (يستخدم لمحاذاة النص عموديًا في وسط العنصر) */
-    margin-right: 4px;
-    margin-top: 4px;
+    margin-right: 11px;
 
 }
 
@@ -91,7 +61,6 @@ body {
 
 #content {
     position: relative;
-    /* max-height: 841.89px; */
 }
 
 .square_black_top_left {
@@ -138,7 +107,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 30px 0 0 30px;
+    border-width: 50px 0 0 50px;
     border-color: black transparent transparent transparent;
 }
 
@@ -149,7 +118,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 30px 30px 0px 0px;
+    border-width: 50px 50px 0px 0px;
     border-color: black transparent transparent transparent;
 }
 
@@ -161,7 +130,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 30px 30px;
+    border-width: 0 0 50px 50px;
     border-color: transparent transparent black transparent;
 }
 
@@ -172,24 +141,35 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 30px 30px 0;
+    border-width: 0 50px 50px 0;
     border-color: transparent transparent black transparent;
 }
 
-ul{
+li {
     margin-bottom: 3rem;
-    margin-left: -24px;
+    border: 5px solid black;
+    list-style: none;
+    padding-left: 15px;
 }
 
 h5::after {
     content: "";
     display: block;
     border-bottom: 1px solid black;
-    margin-bottom: 10px; /* تعديل المسافة بين الخط وعنصر h5 حسب الحاجة */
-  }
+    margin-bottom: 10px;
+}
 
-/* #quastion{
-    margin-bottom: 40px ;
-} */
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-top: 20px;
+}
 
-/*# sourceMappingURL=custom.css.map */
+
+.container_without_edge {
+    padding-top: 45px;
+}
+
+.footer{
+    text-align: center;
+}
