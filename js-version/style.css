@@ -28,8 +28,8 @@ body {
 .circle {
     width: 30px;
     height: 30px;
+    border:solid ;
     border-radius: 50%;
-    background-color: #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
