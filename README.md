@@ -3,7 +3,7 @@
     <li>to make this code work properly you must open the index file with live server</li>
     <li>_ make sure you have live server extension installed in your vs code _ </li>
     <li>_ you can use alternative servers like http-server ....</li>
-    <li>_ When downloading as a PDF, click Print, then Save to PDF from the Destination option ....</li>
+    <li>_ When downloading as a PDF, click Print in the browser, then Save to PDF from the Destination option ....</li>
 
 </ul>
 
