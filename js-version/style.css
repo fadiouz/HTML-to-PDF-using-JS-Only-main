@@ -26,6 +26,13 @@ body {
     justify-content: center;
 }
 
+.num_id_child {
+    display: flex;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    justify-content: center;
+}
+
 .circle {
     width: 30px;
     height: 30px;
@@ -55,7 +62,7 @@ body {
 }
 
 .line_bottom {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     border-bottom: solid black 2px;
 }
 
@@ -68,8 +75,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     background-color: black;
 }
 
@@ -77,8 +84,8 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     background-color: black;
 }
 
@@ -86,8 +93,8 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     background-color: black;
 }
 
@@ -95,8 +102,8 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     background-color: black;
 }
 
@@ -108,7 +115,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 50px 0 0 50px;
+    border-width: 80px 0 0 80px;
     border-color: black transparent transparent transparent;
 }
 
@@ -119,7 +126,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 50px 50px 0px 0px;
+    border-width: 80px 80px 0px 0px;
     border-color: black transparent transparent transparent;
 }
 
@@ -131,7 +138,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 50px 50px;
+    border-width: 0 0 80px 80px;
     border-color: transparent transparent black transparent;
 }
 
@@ -142,7 +149,7 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 50px 50px 0;
+    border-width: 0 80px 80px 0;
     border-color: transparent transparent black transparent;
 }
 
@@ -151,6 +158,10 @@ li {
     border: 5px solid black;
     list-style: none;
     padding-left: 15px;
+}
+
+.p_num_id_child{
+    border: 5px solid black;
 }
 
 h5::after {
@@ -164,7 +175,7 @@ h5::after {
 .center_div ,
 .center2_div, 
 .right_div {
-    margin-top: 20px;
+    margin-top: 9px;
 }
 
 

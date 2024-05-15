@@ -23,14 +23,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		html2canvas(document.querySelector('#content')).then((canvas) => {
 			let base64image = canvas.toDataURL('image/png');
 
-			let pdfWidth = 24 * 37.8; // تحويل العرض من سم إلى بكسل (باستخدام عامل التحويل 37.8 بكسل في السم)
-			let pdfHeight = 29.7 * 37.8; // تحويل الارتفاع من سم إلى بكسل (باستخدام عامل التحويل 37.8 بكسل في السم)
+			let pdfWidth = 24 * 37.8;
+			let pdfHeight = 34.7 * 37.8;
 
-			let pdf = new jsPDF('p', 'px', [pdfWidth, pdfHeight]);
+			let pdf = new jsPDF('p', 'px', [pdfWidth, pdfHeight], true);
+
 			let imageWidth = pdfWidth - 30;
 			let imageHeight = (imageWidth * canvas.height) / canvas.width;
 
-			pdf.addImage(base64image, 'PNG', 15, 15, imageWidth, imageHeight);
+			pdf.addImage(base64image, 'PNG', 15, 15, imageWidth, imageHeight, '', 'FAST');
+
 			pdf.save('pdf');
 		});
 	});
@@ -66,11 +68,11 @@ function Before_selection() {
 	imgSelect.classList.remove("hide");
 }
 
-function createQuestions(num_of_element) {
+function createQuestions(num_of_elements) {
 
+	// var num_of_elements = document.getElementById("numInput").value;
+	num_of_elements = parseInt(num_of_elements);
 	After_selection()
-
-	num_of_elements = parseInt(num_of_element);
 
 	if (!isNaN(num_of_elements) && num_of_elements > 0) {
 		var quastionElement = document.getElementById("quastion");
@@ -215,3 +217,53 @@ function createQuestions(num_of_element) {
 		alert("Please enter a value greater than 0");
 	}
 }
+
+function createIdNum() {
+	rowNum = 9
+	colNum = 9
+
+	var mainContainer = document.getElementById("num_id_child");
+
+	var p_num_id_child = createCircleContainerp("p_num_id_child");
+	mainContainer.appendChild(p_num_id_child);
+
+	function createCircleContainer(className) {
+		var circleContainer = document.createElement("div");
+		circleContainer.className = className;
+		return circleContainer;
+	}
+
+	function createCircleContainerp(className) {
+		var circleContainerul = document.createElement("p");
+		circleContainerul.className = className;
+		return circleContainerul;
+	}
+
+
+	function createCircle(num) {
+		var circle = document.createElement("div");
+		circle.className = "circle";
+		var letter = document.createElement("span");
+		letter.className = "letter";
+		letter.innerHTML = num;
+		circle.appendChild(letter);
+		return circle;
+	}
+
+
+	for (let i = 0; i <= rowNum; i++) {
+		var num_id_child = createCircleContainer("num_id_child");
+
+		for (var j = colNum; j >= 0; j--) {
+			var circle = createCircle(j);
+			num_id_child.appendChild(circle);
+		}
+
+		p_num_id_child.appendChild(num_id_child);
+
+	}
+}
+
+window.onload = function() {
+	createIdNum();
+  };

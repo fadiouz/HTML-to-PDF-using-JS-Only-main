@@ -16,6 +16,7 @@
 <body>
 
 	<div class="container">
+		<!--  -->
 		<div id="content" class="hide">
 			<!-- you can but class (square_black_top_left)  -->
 			<div class="treangle_black_top_left">
@@ -23,8 +24,8 @@
 
 
 			<!-- you can but class (square_black_top_right) -->
-			<div class="treangle_black_top_right">
-			</div>
+			<!-- <div class="treangle_black_top_right">
+			</div> -->
 
 			<!-- you can but class (square_black_bottom_left) -->
 			<div class="treangle_black_bottom_left">
@@ -42,15 +43,12 @@
 							<h5>Name: </h5>
 							<h5>num: </h5>
 						</div>
-						<div class="col-1 offset-2 logo">
-							<img width="125px" height="125px" src="wsp.png" />
-						</div>
-						<div class="invoice-details col-3 offset-3 text-right">
+						<div class="col-6" id="num_id_child">
 
-							<h6>IT</h6>
-							<h6>01/02/2020</h6>
+							<!-- this code from js -->
 
 						</div>
+
 					</div>
 
 					<div class="line_bottom"></div>
@@ -99,11 +97,16 @@
 			</div>
 		</div>
 
+		<!-- <input type="text" id="numInput" placeholder="Num Questions" pattern="\d+"
+			oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+
+		<button type="submit" onclick="createQuestions()">Submit</button> -->
 		<div class="btn hide" id="buttons">
-			
+
 			<button class="btn btn-success btn-lg" onclick="Before_selection()">Choose Another Template</button>
 
 			<button id="btn-one" class="btn btn-success btn-lg">Download PDF</button>
+
 		</div>
 	</div>
 
